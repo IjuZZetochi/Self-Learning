@@ -3,11 +3,17 @@
 using namespace std;
 
 int a, b;
+char c;
 
 int main()
 {
-    ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0);
-    cin >> a >> b;
-    cout << a + b;
+    cout << "Input a: "; cin >> a;
+    cout << "Input b: "; cin >> b;
+    cout << "Choose [+, -, x, /]: "; cin >> c;
+    cout << "Result: ";
+    if (c == '+') cout << a + b; else
+    if (c == '-') cout << a - b; else
+    if (c == 'x') cout << a * b; else
+    cout << (int) a / b;
     return 0;
 }
